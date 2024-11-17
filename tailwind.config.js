@@ -9,6 +9,14 @@ module.exports = {
         poppins_regular: ['Poppins-Regular"', 'serif'], 
         poppins_medium: ['Poppins Medium"', 'serif'], 
       },
+
+      colors: {
+        'custom_gray': '#C2C8DA',
+      },
+      borderRadius: {
+        'radius_60px': '3.75rem',
+      }
+
     
   },
   },

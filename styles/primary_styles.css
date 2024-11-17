@@ -30,3 +30,34 @@
 .container {
    width: clamp(30rem, 66.667vw + 17.5rem, 107.5rem);
 }
+
+.padding_custom_rotated_text {
+    padding-left: 120px;
+    padding-top: 78px;
+}
+
+.custom_lets  span {
+    position: absolute;
+    z-index: 2;
+    font-size: 6rem;
+    top: 64px;
+    left: 119px;
+
+}
+
+.custom_lets::before {
+    background-color: white;
+    padding: 1rem 2rem;
+    display: inline-block;
+    content: '';
+    width: 466px;
+    height: 112px;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 1;
+    transform: rotate(-2deg);
+    top: 68px;
+    left: 82px;
+
+
+}
