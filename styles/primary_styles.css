@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "Poppins Black";
-    src: url('../assets/fonts/Poppins-Black.ttf');
-    font-weight: 400;
+    font-family: "Poppins ExtraBold";
+    src: url('../assets/fonts/Poppins-ExtraBold.ttf');
+    
 }
 
 @font-face {
@@ -21,28 +21,27 @@
     src: url('../assets/fonts/Poppins-Regular.ttf');
 }
 
-.font-poppins_regular {
-    /* font-size: 2rem; */
+@font-face {
+    font-family: "Poppins Light";
+    src: url('../assets/fonts/Poppins-Light.ttf');
 }
-
 
 
 .container {
    width: clamp(30rem, 66.667vw + 17.5rem, 107.5rem);
+   
+  
 }
 
-.padding_custom_rotated_text {
-    padding-left: 120px;
-    padding-top: 78px;
+.top_img {
+    background: url('../assets/img/girl.png') no-repeat right bottom #C2C8DA ;
+    height: 852px;
+
 }
 
 .custom_lets  span {
-    position: absolute;
+    position: relative;
     z-index: 2;
-    font-size: 6rem;
-    top: 64px;
-    left: 119px;
-
 }
 
 .custom_lets::before {
@@ -57,7 +56,30 @@
     z-index: 1;
     transform: rotate(-2deg);
     top: 68px;
-    left: 82px;
+    left: 116px;
+}
 
+.custom_unique span {
+    position: relative;
+    z-index: 2;
+}
 
+.custom_unique::before{
+    background-color: #E6C744;
+    padding: 1rem 2rem;
+    display: inline-block;
+    content: '';
+    width: 495px;
+    height: 112px;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 1;
+    transform: rotate(-2deg);
+    top: 358px;
+    left: 126px;
+}
+
+.yellow_block {
+    height: 186px;
+    /* background-color: #EBD96B ; */
 }
