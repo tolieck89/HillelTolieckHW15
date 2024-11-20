@@ -29,12 +29,12 @@
 
 .container {
    width: clamp(30rem, 66.667vw + 17.5rem, 107.5rem);
-   
-  
 }
 
 .top_img {
     background: url('../assets/img/girl.png') no-repeat right bottom #C2C8DA ;
+    background-size: contain;
+background-repeat: no-repeat;
     height: 852px;
 
 }
@@ -82,4 +82,81 @@
 .yellow_block {
     height: 186px;
     /* background-color: #EBD96B ; */
+}
+
+.custom_new_arrivals  span {
+    position: relative;
+    z-index: 2;
+    
+}
+.custom_new_arrivals::before {
+    background-image: url('../assets/img/yellow_ellipse.svg') ;
+    padding: 1rem 2rem;
+    display: inline-block;
+    content: '';
+    width: 186px;
+    height: 35px;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 1;
+    transform: rotate(-2deg);
+    top: 18px;
+    left: 193px;
+}
+
+.img_yellow_girl {
+    min-width: 892px;
+}
+
+.bg-custom_yellow__ {
+    background: linear-gradient(45deg, #E0C340,#DFC23E, #E1C441, )
+}
+
+.yellow_custom {
+    background-color: #F9DF56;
+}
+
+.custom_yellow_bg {
+    position: relative;
+    z-index: 1;
+}
+
+.custom_today span {
+    position: relative;
+    z-index: 4;
+}
+
+
+
+.custom_today::before {
+    background: white;
+    padding: 1rem 2rem;
+    display: inline-block;
+    content: '';
+    width: 510px;
+    height: 132px;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 2;
+    transform: rotate(-2deg);
+}
+
+.custom_favourite  span {
+    position: relative;
+    z-index: 2;
+    
+}
+.custom_favourite::before {
+    background-image: url('../assets/img/yellow_ellipse.svg') ;
+    padding: 1rem 2rem;
+    display: inline-block;
+    content: '';
+    width: 186px;
+    height: 35px;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 1;
+    transform: rotate(-2deg);
+    top: 18px;
+    left: 270px;
 }
